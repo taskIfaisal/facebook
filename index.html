@@ -5,12 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Aplikasi Sulap Kartu</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="iPhone Kamera" />
+    <link rel="apple-touch-icon" href="./img/icon-192x192.png" />
+    <link rel="apple-touch-startup-image" href="./img/icon-512x512.png" />
+    <link rel="icon" type="image/png" href="./img/icon-192x192.png" />
 
     <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <style>
         html,
@@ -18,7 +23,12 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            background-color: black;
+
+            body {
+                background-color: rgb(224, 223, 223);
+                /* Latar belakang abu-abu untuk seluruh halaman */
+            }
+
             overflow: hidden;
             font-size: 0;
         }
@@ -61,11 +71,14 @@
             width: 100%;
             display: block;
             margin-bottom: 4px;
+            /* Tambahkan margin bawah untuk setiap gambar */
         }
 
         .scrollable img:last-child {
             margin-bottom: 5px;
+            /* Menambahkan jarak lebih pada gambar terakhir */
         }
+
 
         .input-pin {
             position: fixed;
